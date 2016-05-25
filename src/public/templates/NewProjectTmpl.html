@@ -1,0 +1,19 @@
+<div class="text-center">
+  <div>
+    <a ui-sref="home"><button type="button" class="btn btn-lg new">Home</button></a>
+  </div>
+  <h1>New Project</h1>
+</div>
+<div class="container-fluid">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <form>
+      <fieldset class="form-group">
+        <label for="projectTitle">Project Title</label>
+        <input type="text" placeholder="Enter Project Title" class="form-control" ng-model="project.title" id="projectTitle"></input>
+        <br/>
+        <button class="btn btn-success" type="submit" ng-click="addProject(project)">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+<div class="col-md-3"></div>

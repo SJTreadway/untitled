@@ -1,0 +1,26 @@
+<div class="container-fluid text-center">
+  <div>
+    <a ui-sref="home"><button type="button" class="btn btn-lg new">Home</button></a>
+  </div>
+  <div>
+    <h1>Project Page {{id}}</h1>
+  </div>
+  <div>
+    <a ui-sref="newDocument({id: '{{id}}'})"><button class="btn btn-lg new">Add New Document</button></a>
+  </div>
+  <br/>
+  <div class="col-md-4"></div>
+  <div class="col-md-4 form-group">
+    <label for="doc">Document Type:</label>
+    <select class="form-control" id="doc">
+      <option disabled selected value> -- select an option -- </option>
+      <option>Purchase Orders</option>
+      <option>Material Invoices</option>
+      <option>Contracts</option>
+      <option>Billing</option>
+      <option>Product Submittals</option>
+      <option>Cost Reports</option>
+    </select>
+  </div>
+  <div class="col-md-4"></div>
+</div>

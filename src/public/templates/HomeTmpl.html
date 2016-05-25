@@ -1,0 +1,10 @@
+<div class="text-center">
+  <a ui-sref="newProject"><button class="btn btn-lg new">Create New Project</button></a>
+  <div class="container-fluid">
+    <div class="col-md-3 project" ng-repeat="project in projects">
+      <a class="link" ui-sref="project({id: '{{project.$id}}'})">
+        <h1>{{project.title}}</h1>
+      </a>
+    </div>
+  </div>
+</div>

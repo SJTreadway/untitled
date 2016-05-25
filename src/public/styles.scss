@@ -1,0 +1,36 @@
+$al: crimson;
+
+body{
+  color: $al;
+}
+label {
+  font-size: 1.2em;
+}
+.new {
+  margin-top: 2%;
+  background-color: $al;
+  border: none;
+  color: white;
+  &:hover, &:focus {
+    background-color: white;
+    color: $al;
+    border: 2px solid $al;
+  }
+}
+.project {
+  margin: 4%;
+  border: 8px solid $al;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 10px black;
+}
+.link {
+  text-decoration: none;
+  color: $al;
+  &:hover {
+    text-decoration: underline;
+    color: $al;
+  }
+}
+.select {
+  margin-top: 3%;
+}
