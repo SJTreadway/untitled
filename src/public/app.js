@@ -2,18 +2,16 @@ angular.module('PMApp', ['ui.router', 'firebase'])
   .constant('fb', {
     url: 'https://sjt-pm.firebaseio.com'
   })
-  .config(function($stateProvider, $urlRouterProvider) {
-
-    $urlRouterProvider.otherwise('/home');
-
+  .config(function ($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise('/home')
     $stateProvider
       .state('home', {
         url: '/home',
         templateUrl: './templates/HomeTmpl.html',
         controller: 'HomeCtrl',
         resolve: {
-          projects: function(MainService) {
-            return MainService.getProjects();
+          projects: function (MainService) {
+            return MainService.getProjects()
           }
         }
       })
@@ -32,5 +30,4 @@ angular.module('PMApp', ['ui.router', 'firebase'])
         templateUrl: './templates/NewDocumentTmpl.html',
         controller: 'NewDocumentCtrl'
       })
-
   })

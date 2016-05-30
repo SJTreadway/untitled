@@ -1,2 +1,2 @@
-angular.module('PMApp').controller('MainCtrl', function($scope) {
+angular.module('PMApp').controller('MainCtrl', function ($scope) {
 })

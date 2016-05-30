@@ -1,5 +1,3 @@
-angular.module('PMApp').controller('NewDocumentCtrl', function($scope, $stateParams) {
-
-  $scope.id = $stateParams.id;
-
+angular.module('PMApp').controller('NewDocumentCtrl', function ($scope, $stateParams) {
+  $scope.id = $stateParams.id
 })
