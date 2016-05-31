@@ -20,19 +20,19 @@ angular.module('PMApp', ['ui.router', 'firebase'])
         templateUrl: './templates/NewProjectTmpl.html',
         controller: 'NewProjectCtrl'
       })
-      .state('project', {
-        url: '/project/:id',
-        templateUrl: './templates/ProjectTmpl.html',
-        controller: 'ProjectCtrl',
-        resolve: {
-          docs: MainService => {
-            return MainService.getDocs()
-          }
-        }
-      })
       .state('newDocument', {
         url: '/project/:id/newDocument',
         templateUrl: './templates/NewDocumentTmpl.html',
         controller: 'NewDocumentCtrl'
+      })
+      .state('documents', {
+        url: '/project/:id/documents',
+        templateUrl: './templates/DocumentsTmpl.html',
+        controller: 'DocumentsCtrl'
+      })
+      .state('documentType', {
+        url: '/project/:id/documents/:type',
+        templateUrl: './templates/DocumentTypeTmpl.html',
+        controller: 'DocumentTypeCtrl'
       })
   })

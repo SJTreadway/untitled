@@ -11,9 +11,9 @@
   <br/>
 </div>
 <div class="container-fluid text-center">
-  <div class="col-md-3 docs" ng-repeat="doc in docs">
-    <a class="link" ui-sref="documents({id: '{{document.$id}}'})">
-      <h1>{{doc.title}}</h1>
+  <div class="col-md-3 docs" ng-model="docType" ng-repeat="doc in docs">
+    <a class="link" ui-sref="documentType({type: '{{doc}}', id: '{{id}}'})">
+      <h1>{{doc}}</h1>
     </a>
   </div>
 </div>
