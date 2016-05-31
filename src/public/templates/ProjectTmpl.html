@@ -9,5 +9,11 @@
     <a ui-sref="newDocument({id: '{{id}}'})"><button class="btn btn-lg new">Add New Document</button></a>
   </div>
   <br/>
-  <form-directive></form-directive>
+</div>
+<div class="container-fluid text-center">
+  <div class="col-md-3 docs" ng-repeat="doc in docs">
+    <a class="link" ui-sref="documents({id: '{{document.$id}}'})">
+      <h1>{{doc.title}}</h1>
+    </a>
+  </div>
 </div>

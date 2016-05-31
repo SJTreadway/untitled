@@ -10,7 +10,7 @@ angular.module('PMApp', ['ui.router', 'firebase'])
         templateUrl: './templates/HomeTmpl.html',
         controller: 'HomeCtrl',
         resolve: {
-          projects: function (MainService) {
+          projects: MainService => {
             return MainService.getProjects()
           }
         }
@@ -23,7 +23,12 @@ angular.module('PMApp', ['ui.router', 'firebase'])
       .state('project', {
         url: '/project/:id',
         templateUrl: './templates/ProjectTmpl.html',
-        controller: 'ProjectCtrl'
+        controller: 'ProjectCtrl',
+        resolve: {
+          docs: MainService => {
+            return MainService.getDocs()
+          }
+        }
       })
       .state('newDocument', {
         url: '/project/:id/newDocument',
