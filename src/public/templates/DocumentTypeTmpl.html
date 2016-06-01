@@ -1,3 +1,15 @@
 <div class="container-fluid text-center">
+  <a ui-sref="documents({id: '{{id}}'})">
+    <button class="btn btn-lg new">
+      Go Back
+    </button>
+  </a>
+</div>
+<div class="container-fluid text-center">
   <h1>{{type}}</h1>
+  <div class="col-md-3 docs" ng-repeat="doc in docs">
+    <a class="link" ui-sref="singleDocument({id: '{{id}}', type: '{{type}}', docID: '{{doc.$id}}'})">
+      <h1>{{doc.title}}</h1>
+    </a>
+  </div>
 </div>

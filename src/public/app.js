@@ -35,4 +35,9 @@ angular.module('PMApp', ['ui.router', 'firebase'])
         templateUrl: './templates/DocumentTypeTmpl.html',
         controller: 'DocumentTypeCtrl'
       })
+      .state('singleDocument', {
+        url: '/project/:id/documents/:type/:docID',
+        templateUrl: './templates/SingleDocumentTmpl.html',
+        controller: 'SingleDocumentCtrl'
+      })
   })

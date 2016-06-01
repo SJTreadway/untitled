@@ -11,59 +11,59 @@
     <label for="doc">Document Type:</label>
     <select class="form-control" id="doc" ng-change="getDocType(docType)" ng-model="docType">
       <option disabled selected value> -- select an option -- </option>
-      <option value="purchase_orders">Purchase Orders</option>
-      <option value="material_invoices">Material Invoices</option>
-      <option value="contracts">Contracts</option>
-      <option value="billing">Billing</option>
-      <option value="product_submittals">Product Submittals</option>
-      <option value="cost_reports">Cost Reports</option>
+      <option value="Purchase Orders">Purchase Orders</option>
+      <option value="Material Invoices">Material Invoices</option>
+      <option value="Contracts">Contracts</option>
+      <option value="Billing">Billing</option>
+      <option value="Product Submittals">Product Submittals</option>
+      <option value="Cost Reports">Cost Reports</option>
     </select>
-    <form class="form-group" ng-if="docType === 'purchase_orders'">
+    <form class="form-group" ng-if="docType === 'Purchase Orders'">
       <h3>Purchase Orders</h3>
       <fieldset class="form-group">
         <input type="text" class="form-control" ng-model="doc.title" placeholder="Enter document title" />
         <br/>
-        <button type="submit" ng-click="addDoc(doc, docType)" class="btn btn-success">Submit</button>
+        <button type="submit" ng-click="addDoc(doc)" class="btn btn-success">Submit</button>
       </fieldset>
     </form>
-    <form class="form-group" ng-if="docType === 'material_invoices'">
+    <form class="form-group" ng-if="docType === 'Material Invoices'">
       <h3>Material Invoices</h3>
       <fieldset class="form-group">
         <input type="text" class="form-control" ng-model="doc.title" placeholder="Enter document title" />
         <br/>
-        <button type="submit" ng-click="addDoc(doc, docType)" class="btn btn-success">Submit</button>
+        <button type="submit" ng-click="addDoc(doc)" class="btn btn-success">Submit</button>
       </fieldset>
     </form>
-    <form class="form-group" ng-if="docType === 'contracts'">
+    <form class="form-group" ng-if="docType === 'Contracts'">
       <h3>Contracts</h3>
       <fieldset class="form-group">
         <input type="text" class="form-control" ng-model="doc.title" placeholder="Enter document title" />
         <br/>
-        <button type="submit" ng-click="addDoc(doc, docType)" class="btn btn-success">Submit</button>
+        <button type="submit" ng-click="addDoc(doc)" class="btn btn-success">Submit</button>
       </fieldset>
     </form>
-    <form class="form-group" ng-if="docType === 'billing'">
+    <form class="form-group" ng-if="docType === 'Billing'">
       <h3>Billing</h3>
       <fieldset class="form-group">
         <input type="text" class="form-control" ng-model="doc.title" placeholder="Enter document title" />
         <br/>
-        <button type="submit" ng-click="addDoc(doc, docType)" class="btn btn-success">Submit</button>
+        <button type="submit" ng-click="addDoc(doc)" class="btn btn-success">Submit</button>
       </fieldset>
     </form>
-    <form class="form-group" ng-if="docType === 'product_submittals'">
+    <form class="form-group" ng-if="docType === 'Product Submittals'">
       <h3>Product Submittals</h3>
       <fieldset class="form-group">
         <input type="text" class="form-control" ng-model="doc.title" placeholder="Enter document title" />
         <br/>
-        <button type="submit" ng-click="addDoc(doc, docType)" class="btn btn-success">Submit</button>
+        <button type="submit" ng-click="addDoc(doc)" class="btn btn-success">Submit</button>
       </fieldset>
     </form>
-    <form class="form-group" ng-if="docType === 'cost_reports'">
+    <form class="form-group" ng-if="docType === 'Cost Reports'">
       <h3>Cost Reports</h3>
       <fieldset class="form-group">
         <input type="text" class="form-control" ng-model="doc.title" placeholder="Enter document title" />
         <br/>
-        <button type="submit" ng-click="addDoc(doc, docType)" class="btn btn-success">Submit</button>
+        <button type="submit" ng-click="addDoc(doc)" class="btn btn-success">Submit</button>
       </fieldset>
     </form>
   </div>

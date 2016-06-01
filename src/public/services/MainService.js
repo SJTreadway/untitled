@@ -6,10 +6,10 @@ angular.module('PMApp').service('MainService', function(fb, $firebaseArray) {
     return projects
   }
 
-  this.getDocs = () => {
-    let docsRef = new Firebase(fb.url + '/projects/' + project.id + '/documents')
-    let docs = $firebaseArray(docsRef)
-    return docs
-  }
+  // this.getDocs = () => {
+  //   let docsRef = new Firebase(fb.url + '/projects/' + project.id + '/documents')
+  //   let docs = $firebaseArray(docsRef)
+  //   return docs
+  // }
 
 })
