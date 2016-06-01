@@ -4,7 +4,7 @@ angular.module('PMApp').controller('NewDocumentCtrl', function ($scope, $statePa
     const ref = new Firebase(fb.url + '/projects/' + $scope.id + '/documents/' + docType)
     $scope.docs = $firebaseArray(ref)
   }
-  $scope.addDoc = function (doc) {
+  $scope.addDoc = (doc) => {
     if (doc === undefined) {
       alert('Please enter a title.')
     } else {
